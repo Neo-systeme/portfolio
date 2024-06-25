@@ -1,0 +1,97 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --primaryColor: #076CDD;
+}
+.navbar{
+    background-color: black !important;
+}
+.navbar-brand{
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 55px;
+}
+.navbar-brand span{
+    color: var(--primaryColor);
+}
+.navbar ul li a{
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.navbar ul li a.active{
+    color: var(--primaryColor) !important;
+}
+.navbar ul li a:hover{
+    color: var(--primaryColor);
+    border-bottom: 2px solid white;
+}
+.navbar ul li.dropdown ul {
+    background-color: black;
+    transition: 0.5px;
+}
+.navbar ul li.dropdown ul li:hover{
+    display: inline-block;
+}
+.banner{
+    height: 700px;
+    background: url(images/hero-bg.jpg) no-repeat center/cover fixed;
+    color: white;
+    text-align: center;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+}
+.cont h3{
+    color: var(--primaryColor);
+    font-size: 60px;
+    font-weight: 700;
+}
+.cont p{
+    font-size: 45px;
+    font-weight: 500;
+}
+/* section about */
+#about .progress{
+    height: 10px !important;
+}
+#about .trai{
+    height: 5px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+#about .about{
+    font-size: 18px;
+}
+#service .trai{
+    height: 5px;
+    width: 30px;
+    margin: 0 auto;
+
+}
+#service .boite-icon .bi{
+    font-size: 30px;
+}
+#service .boite-icon{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    border: 8px solid var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+#service .card:hover .boite-icon{
+    background-color: #076CDD;
+    border-color: rgb(207, 207, 228);
+}
+#service .card:hover .bi{
+    color: white;
+}
